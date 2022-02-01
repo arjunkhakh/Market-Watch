@@ -27,3 +27,5 @@ fetch(url)
     .then(function (data) {
       console.log(data);   
     })
+
+    // Company Name, Logo, Company Symbol, Stock Market Price and Increase/Decrease in Stock Market Value in Percentage.
