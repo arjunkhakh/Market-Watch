@@ -15,9 +15,9 @@ function profileCall(url) {
         var ticker = data[0].ticker;
         var logo = data[0].logo;
 
-        // titl.innerHTML = "<h1>" + name + "<h1>"
-        // log.innerHTML = "<img src=" + '"' + logo + '"' + " >"
-        // label.innerHTML = "<label>" + ticker + "</label>"
+        titl.innerHTML = "<h1>" + name + "<h1>"
+        log.innerHTML = "<img src=" + '"' + logo + '"' + " >"
+        label.innerHTML = "<label>" + ticker + "</label>"
 
         console.log(name);
         console.log(ticker)
@@ -77,6 +77,14 @@ function getLocalStorage(event) {
   })
 
   });
+
+   var apple = document.querySelector("#currentPrice1")
+
+  // TO DO 
+
+  // ADD STOCK CANDLE WIDGET CHART https://finnhub.io/docs/api/stock-candles
+
+  // Popular Companies Card: Tesla, Facebook, Google, Netflix and Apple.
 
 
 // COMMENTS BELOW FOR REFERNCE
