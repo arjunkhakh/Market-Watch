@@ -6,14 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+ <!-- section wrapper -->
+    <body class="bg-teal-400">
+        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                    <img src="#" alt="Logo" class="h-10 inline">
+                </span>
 
-    <!-- section wrapper -->
-    <div> 
-        <div class="navBar">  </div>
-    </div>
-    
+                <span class="text-3xl cursor-pointer md:hidden mx-2 block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </span>
+
+            </div>
+
+            
+            <ul class="md:flex md:item-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:p1-0 p1-7 md:opacity-100 md:opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-teal-400 duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-teal-400 duration-500">About</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-teal-400 duration-500">Market</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="Card-1">  </div>
+
+    </body>
+
+    </header>
 </body>
-<script src="./assets/javascript.js"></script>
+
+<script src="./assets/javascript.js"> </script>
+
 </html>
