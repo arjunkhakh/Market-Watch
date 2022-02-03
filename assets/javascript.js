@@ -1,6 +1,7 @@
-var inputBox = document.querySelector("#inputBox")
+// <<<<<<< javascript
+// var inputBox = document.querySelector("#inputBox")
 
-var submitButton = document.querySelector("#submitBtn")
+// var submitButton = document.querySelector("#submitBtn")
 
 // var url = "https://finnhub.io/api/v1/search?q=US0378331005&token=c7sopmqad3i9jn7rii60";
 
