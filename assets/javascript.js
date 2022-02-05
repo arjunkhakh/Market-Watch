@@ -265,8 +265,4 @@ function getLocalStorage(event) {
 
     // Company Name, Logo, Company Symbol, Stock Market Price and Increase/Decrease in Stock Market Value in Percentage.
 
-<<<<<<< HEAD
     // Get the American ISIN which gives us the company symbol which we can access the profile
-=======
-    // Get the American ISIN which gives us the company symbol which we can access the profile
->>>>>>> main
