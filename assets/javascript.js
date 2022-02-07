@@ -1,4 +1,3 @@
-
 var inputBox = document.querySelector("#inputBox")
 var submitButton = document.querySelector("#submitBtn")
 
