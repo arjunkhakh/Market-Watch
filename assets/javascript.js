@@ -399,6 +399,20 @@ cardInfo11()
 cardInfo12()
 cardInfo13()
 
+submitButton.addEventListener("click", function () {
+  var input = inputBox.value;
+
+  fetch(("https://eodhistoricaldata.com/api/search/" + input + "?api_token=61fc0e9d63bc94.19357754&limit=1")) 
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  var symbol = data[0].Code;
+  console.log(data[0].Code);
+});
+});
+
+
   // submitButton.addEventListener("click", function () {
   //   var input = inputBox.value;
 
