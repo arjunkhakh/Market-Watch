@@ -5,97 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
- <!-- section wrapper -->
-    <body class="bg-teal-400">
-        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center">
-                <span class="text-2xl font-[Poppins] cursor-pointer">
-                    <img src="#" alt="Logo" class="h-10 inline">
-                </span>
 
-                <span class="text-3xl cursor-pointer md:hidden mx-2 block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </span>
+<body class="bg-gradient-to-r from-indigo-500 via-pink-400 to-indigo-500">
+    <nav class="p-5 bg-gradient-to-r from-indigo-500 via-pink-400 to-indigo-500 shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline h-20 px-6"
+              src="./img/logoNoBGG.png">
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+    
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">News</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a>
+          </li>
+        </ul>
+      </nav> 
 
-            </div>
-
-            
-            <ul class="md:flex md:item-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:p1-0 p1-7 md:opacity-100 md:opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-teal-400 duration-500">Home</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-teal-400 duration-500">About</a>
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-teal-400 duration-500">Market</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- cards -->
-        <div id="content-wrapper" class="flex elx-row">
-            <div id="card-1" class="bg-white p-2 w-60 rounded-x1 m-6 shadow-2xl h-1000 w-32 "> 
-                <!-- Company Logo -->
-                <img id="companyLogo1" class="object-cover h-40" src="./img/tesla logo.jpeg" alt="companyLogo">
-                <!-- Company Name -->
-                <div id="companyName1" class="text-center ">Name</div>
-                <!-- Ticker symbol -->
-                <div id="ticker1" class="text-center ">ticker</div>
-                <!-- Current Price -->
-                <div id="price1" class="text-center" >CurrentPrice</div>
-            </div>
-            <!-- cards -->
-            <div id="card-1" class="bg-white p-2 w-60 rounded-x1 m-6 shadow-2xl h-1000 w-32 "> 
-                <!-- Company Logo -->
-                <img id="companyLogo2" class="object-cover h-40" src="./img/tesla logo.jpeg" alt="companyLogo">
-                <!-- Company Name -->
-                <div id="companyName2" class="text-center ">Name</div>
-                <!-- Ticker symbol -->
-                <div id="ticker2" class="text-center ">ticker</div>
-                <!-- Current Price -->
-                <div id="price2" class="text-center" >CurrentPrice</div>
-            </div>
-            <!-- cards -->
-            <div id="card-1" class="bg-white p-2 w-60 rounded-x1 m-6 shadow-2xl h-1000 w-32 "> 
-                <!-- Company Logo -->
-                <img id="companyLogo3" class="object-cover h-40" src="./img/tesla logo.jpeg" alt="companyLogo">
-                <!-- Company Name -->
-                <div id="companyName3" class="text-center ">Name</div>
-                <!-- Ticker symbol -->
-                <div id="ticker3" class="text-center ">ticker</div>
-                <!-- Current Price -->
-                <div id="price3" class="text-center" >CurrentPrice</div>
-            </div>
-            <!-- cards -->
-            <div id="card-1" class="bg-white p-2 w-60 rounded-x1 m-6 shadow-2xl h-1000 w-32 "> 
-                <!-- Company Logo -->
-                <img id="companyLogo4" class="object-cover h-40" src="./img/tesla logo.jpeg" alt="companyLogo">
-                <!-- Company Name -->
-                <div id="companyName4" class="text-center ">Name</div>
-                <!-- Ticker symbol -->
-                <div id="ticker4" class="text-center ">ticker</div>
-                <!-- Current Price -->
-                <div id="price4" class="text-center" >CurrentPrice</div>
-            </div>
-            <!-- cards -->
-            <div id="card-1" class="bg-white p-2 w-60 rounded-x1 m-6 shadow-2xl h-1000 w-32 "> 
-                <!-- Company Logo -->
-                <img id="companyLogo5" class="object-cover h-40" src="./img/tesla logo.jpeg" alt="companyLogo">
-                <!-- Company Name -->
-                <div id="companyName5" class="text-center ">Name</div>
-                <!-- Ticker symbol -->
-                <div id="ticker5" class="text-center ">ticker</div>
-                <!-- Current Price -->
-                <div id="price5" class="text-center" >CurrentPrice</div>
+    <div class="flex justify-center">
+        <div class="mb-3 xl:w-96">
+            <div class="input-group relative flex flex-wrap items-stretch w-full mb-4">
+            <input type="search" class="form-control relative flex-auto min-w-0 block px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon3">
+            <button class="btn inline-block px-4 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-indigo-400 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="searchBtn">Search</button>
             </div>
         </div>
-    </body>
+    </div>
 
-    </header>
+    <div class="min-h-screen flex flex-wrap justify-center flex space-x-4">
+
+            <!-- Card Container Start -->
+
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/apple.jpeg" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Apple</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/Alphabet.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Google</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/Amazon .png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Amazon</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/tesla logo.jpeg" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Tesla</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/Meta.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Meta</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/microsoft.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Microsoft</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/Netflix.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Netflix</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/JPM.png  " alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">JPMorgan</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/morganStandley.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Morgan Standley</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/Nikelogo.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">NIKE</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/nvidia3433.jpeg" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">NVIDA</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/paypal.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">PayPal</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            <div class="justify-center rounded-lg">
+
+                <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+                    <img id="logo1" src="./img/pfizer.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Pfizer</h2>  
+                    <div id="ticker1" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+                    <div id="price1" class="text-center px-2 pb-5 text-3xl">Price</div>  
+                    
+                    <!-- Link button to chart page when needed -->
+                    <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+                </div>
+            </div>
+            
+    </div>
+
 </body>
-<script src="./assets/javascript.js"></script>
+    
+
+<script src="./assets/javascript.js"> </script>
+<script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+
 </html>
