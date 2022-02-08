@@ -329,7 +329,7 @@ function cardInfo6() {
     ticker6.textContent = data.ticker;
   })
 
-  fetch("https://finnhub.io/api/v1/quote?symbol=MFST&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/quote?symbol=MSFT&token=c7sopmqad3i9jn7rii60")
   .then(function (response) {
     return response.json();
   })
