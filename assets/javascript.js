@@ -552,25 +552,6 @@ submitButton.addEventListener("click", function () {
   // })
 
   // });
-=======
-    var symbol = data[0].Code;
-    console.log(data[0].Code);
-  //   var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60")
-
-  //   profileCall(profileUrl); 
-
-  //   var stockUrl = ("https://finnhub.io/api/v1/quote?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60");
-
-  //   stockPrice(stockUrl);
-  // })
-  });
-});
-
-  cardInfo1()
-  cardInfo2()
-  cardInfo3()
-  cardInfo4()
-  cardInfo5()
 
   // TO DO 
 
