@@ -82,9 +82,9 @@ function stockPrice(url) {
  var cardChange = document.querySelector("#searchChange")
  var cardPerc = document.querySelector("#searchPercentage")
 
- cardCurrent.textContent = stockValue.c;
- cardChange.textContent = stockValue.d;
- cardPerc.textContent = stockValue.dp;
+ cardCurrent.textContent = "$" + stockValue.c;
+ cardChange.textContent = "Change in Price: " + "$" + stockValue.d;
+ cardPerc.textContent = "Percentage of Change: " + stockValue.dp + "%";
  
       });
 }
