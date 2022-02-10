@@ -85,8 +85,20 @@ function stockPrice(url) {
  var cardPerc = document.querySelector("#searchPercentage")
 
  cardCurrent.textContent = "$" + stockValue.c;
- cardChange.textContent = "Change in Price: " + "$" + stockValue.d;
- cardPerc.textContent = "Percentage of Change: " + stockValue.dp + "%";
+ cardChange.textContent = "$" + stockValue.d;
+ cardPerc.textContent = stockValue.dp + "%";
+
+ if (stockValue.d < 0) {
+   cardChange.setAttribute("style", "color:red")
+ } else {
+   cardChange.setAttribute("style", "color:green")
+ }
+
+ if (stockValue.dp < 0) {
+  cardPerc.setAttribute("style", "color:red")
+} else {
+  cardPerc.setAttribute("style", "color:green")
+}
  
       });
 }
