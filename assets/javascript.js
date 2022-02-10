@@ -30,6 +30,8 @@ var ticker11 = document.querySelector("#ticker11")
 var ticker12 = document.querySelector("#ticker12")  
 var ticker13 = document.querySelector("#ticker13") 
 
+var cardContainer = document.querySelector("#userSearch")
+
 function profileCall(url) {
   fetch(url)
       .then(function (response) {
@@ -430,6 +432,8 @@ submitButton.addEventListener("click", function () {
    var stockUrl = ("https://finnhub.io/api/v1/quote?symbol=" + symbol + "&token=c7sopu2ad3i9jn7riiig");
 
    stockPrice(stockUrl);
+
+  cardContainer.setAttribute("style", "display:block;")
 });
 });
 
