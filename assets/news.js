@@ -21,6 +21,9 @@ var date1 = document.querySelector("#date1")
 var date2 = document.querySelector("#date2")
 var date3 = document.querySelector("#date3")
 
+var sButton = document.querySelector("#searchBtn")
+var sInput = document.querySelector("#companyBox")
+
 fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e503585594&country=us&category=business&language=en")
 .then(function (response) {
     return response.json();
