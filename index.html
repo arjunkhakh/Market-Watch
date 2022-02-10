@@ -26,13 +26,10 @@
     
         <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+            <a href="./index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">News</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a>
+            <a href="./News.html" class="text-xl hover:text-cyan-500 duration-500">News</a>
           </li>
         </ul>
       </nav> 
@@ -40,16 +37,44 @@
     <div class="flex justify-center">
         <div class="mb-3 xl:w-96">
             <div class="input-group relative flex flex-wrap items-stretch w-full mb-4">
-            <input type="search" class="form-control relative flex-auto min-w-0 block px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon3" id="inputBox">
+            <input type="search" class="form-control relative flex-auto min-w-0 block px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search Company" aria-label="Search" aria-describedby="button-addon3" id="inputBox">
             <button class="btn inline-block px-4 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-indigo-400 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="submitBtn">Search</button>
             </div>
         </div>
     </div>
 
+    <!-- Page Heading -->
+    <div> 
+
+   <!-- User search Card -->
+
+   <div id="userSearch" class="justify-center rounded-lg">
+
+        <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
+
+            <img id="searchLogo" src=" " alt="Logo" class="h-20 m-6 "></img>
+            <h2 id="searchName" class="text-center px-2 pb-5 text-2xl text-gray-600">  </h2>  
+            <div id="searchTicker" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
+            <div id="searchCurrentPrice" class="text-center px-2 pb-5 text-3xl">Price</div>
+            <div id="searchChange">---</div>
+            <div id="searchPercentage">---</div>
+            
+            <!-- Link button to chart page when needed -->
+            <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
+        </div>
+    </div>
+
+        <h2 class="mx-10 text-white text-center text-5xl " >Popular Companies</h2> 
+    
+    </div>
+    
+
     <div class="min-h-screen flex flex-wrap justify-center flex space-x-4">
 
-            <!-- Card Container Start -->
+        
 
+            
+            <!-- Card Container Start -->
             <div class="justify-center rounded-lg">
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
@@ -63,12 +88,13 @@
                     <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
                 </div>
             </div>
+
             <div class="justify-center rounded-lg">
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/Alphabet.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Google</h2>  
+                    <img id="logo2" src="./img/Alphabet.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name2" class="text-center px-2 pb-5 text-2xl text-gray-600">Google</h2>  
                     <div id="ticker2" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price2" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -76,12 +102,13 @@
                     <!-- <a href="#" class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500">Charts</a> -->
                 </div>
             </div>
+
             <div class="justify-center rounded-lg">
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/Amazon .png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Amazon</h2>  
+                    <img id="logo3" src="./img/Amazon .png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name3" class="text-center px-2 pb-5 text-2xl text-gray-600">Amazon</h2>  
                     <div id="ticker3" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price3" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -93,8 +120,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/tesla logo.jpeg" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Tesla</h2>  
+                    <img id="logo4" src="./img/tesla logo.jpeg" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name4" class="text-center px-2 pb-5 text-2xl text-gray-600">Tesla</h2>  
                     <div id="ticker4" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price4" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -106,8 +133,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/Meta.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Meta</h2>  
+                    <img id="logo5" src="./img/Meta.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name5" class="text-center px-2 pb-5 text-2xl text-gray-600">Meta</h2>  
                     <div id="ticker5" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price5" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -119,8 +146,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/microsoft.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Microsoft</h2>  
+                    <img id="logo6" src="./img/microsoft.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name6" class="text-center px-2 pb-5 text-2xl text-gray-600">Microsoft</h2>  
                     <div id="ticker6" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price6" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -132,8 +159,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/Netflix.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Netflix</h2>  
+                    <img id="logo7" src="./img/Netflix.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name7" class="text-center px-2 pb-5 text-2xl text-gray-600">Netflix</h2>  
                     <div id="ticker7" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price7" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -145,8 +172,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/JPM.png  " alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">JPMorgan</h2>  
+                    <img id="logo8" src="./img/JPM.png  " alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name8" class="text-center px-2 pb-5 text-2xl text-gray-600">JPMorgan</h2>  
                     <div id="ticker8" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price8" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -158,8 +185,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/morganStandley.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Morgan Standley</h2>  
+                    <img id="logo9" src="./img/morganStandley.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name9" class="text-center px-2 pb-5 text-2xl text-gray-600">Morgan Standley</h2>  
                     <div id="ticker9" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price9" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -171,8 +198,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/Nikelogo.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">NIKE</h2>  
+                    <img id="logo10" src="./img/Nikelogo.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name10" class="text-center px-2 pb-5 text-2xl text-gray-600">NIKE</h2>  
                     <div id="ticker10" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price10" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -184,8 +211,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/nvidia3433.jpeg" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">NVIDA</h2>  
+                    <img id="logo11" src="./img/nvidia3433.jpeg" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name11" class="text-center px-2 pb-5 text-2xl text-gray-600">NVIDA</h2>  
                     <div id="ticker11" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price11" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -197,8 +224,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/paypal.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">PayPal</h2>  
+                    <img id="logo12" src= "./img/paypal.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name12" class="text-center px-2 pb-5 text-2xl text-gray-600">PayPal</h2>  
                     <div id="ticker12" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price12" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
@@ -210,8 +237,8 @@
 
                 <div class="flex flex-col flex-wrap bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52 justify-center">
 
-                    <img id="logo1" src="./img/pfizer.png" alt="Logo" class="h-20 m-6 "></img>
-                    <h2 id="name1" class="text-center px-2 pb-5 text-2xl text-gray-600">Pfizer</h2>  
+                    <img id="logo13" src="./img/pfizer.png" alt="Logo" class="h-20 m-6 "></img>
+                    <h2 id="name13" class="text-center px-2 pb-5 text-2xl text-gray-600">Pfizer</h2>  
                     <div id="ticker13" class="text-center px-2 pb-5 text-1xl">Ticker</div>  
                     <div id="price13" class="text-center px-2 pb-5 text-3xl">Price</div>  
                     
