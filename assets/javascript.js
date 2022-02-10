@@ -282,7 +282,7 @@ function cardInfo8() {
 
 // Morgan Standley Ticker and Stock Price
 function cardInfo9() {
-  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=MS&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=MS&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -292,7 +292,7 @@ function cardInfo9() {
     ticker9.textContent = data.ticker;
   })
 
-  fetch("https://finnhub.io/api/v1/quote?symbol=MS&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/quote?symbol=MS&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -305,7 +305,7 @@ function cardInfo9() {
 
 // Nike Ticker and Stock Price
 function cardInfo10() {
-  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=NKE&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=NKE&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -315,7 +315,7 @@ function cardInfo10() {
     ticker10.textContent = data.ticker;
   })
 
-  fetch("https://finnhub.io/api/v1/quote?symbol=NKE&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/quote?symbol=NKE&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -328,7 +328,7 @@ function cardInfo10() {
 
 // Nivada Ticker and Stock Price
 function cardInfo11() {
-  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=NVDA&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=NVDA&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -338,7 +338,7 @@ function cardInfo11() {
     ticker11.textContent = data.ticker;
   })
 
-  fetch("https://finnhub.io/api/v1/quote?symbol=NVDA&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/quote?symbol=NVDA&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -353,7 +353,7 @@ function cardInfo11() {
 
 // Paypal Ticker and Stock Price
 function cardInfo12() {
-  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=PYPL&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=PYPL&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -363,7 +363,7 @@ function cardInfo12() {
     ticker12.textContent = data.ticker;
   })
 
-  fetch("https://finnhub.io/api/v1/quote?symbol=PYPL&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/quote?symbol=PYPL&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -377,7 +377,7 @@ function cardInfo12() {
 
 // Pfizer Ticker and Stock Price
 function cardInfo13() {
-  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=PFE&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/stock/profile2?symbol=PFE&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -387,7 +387,7 @@ function cardInfo13() {
     ticker13.textContent = data.ticker;
   })
 
-  fetch("https://finnhub.io/api/v1/quote?symbol=PFE&token=c7sopmqad3i9jn7rii60")
+  fetch("https://finnhub.io/api/v1/quote?symbol=PFE&token=c7sopu2ad3i9jn7riiig")
   .then(function (response) {
     return response.json();
   })
@@ -423,11 +423,11 @@ submitButton.addEventListener("click", function () {
   var symbol = input.results[0].ticker
   console.log(input.results[0].ticker);
   
-  var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60")
+  var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopu2ad3i9jn7riiig")
 
   profileCall(profileUrl); 
 
-   var stockUrl = ("https://finnhub.io/api/v1/quote?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60");
+   var stockUrl = ("https://finnhub.io/api/v1/quote?symbol=" + symbol + "&token=c7sopu2ad3i9jn7riiig");
 
    stockPrice(stockUrl);
 });
