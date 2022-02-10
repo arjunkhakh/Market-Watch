@@ -42,9 +42,15 @@ function profileCall(url) {
         var ticker = data.ticker;
         var logo = data.logo;
 
-        console.log(name);
-        console.log(ticker)
-        console.log(logo)
+var cardName = document.querySelector("#searchName")
+        var cardTicker = document.querySelector("#searchTicker")
+        var cardLogo = document.querySelector("#searchLogo")
+
+        cardName.textContent = data.name;
+        cardTicker.textContent = data.ticker;
+        
+        var cardImg = data.logo;
+        cardLogo.setAttribute("src", cardImg)
       });
 }
 
@@ -56,21 +62,30 @@ function stockPrice(url) {
       .then(function (stockValue) {
         console.log(stockValue);
 
-        var Current = stockValue.c; // Current Price
-        var change = stockValue.d; // Change 
-        var percentage = stockValue.dp; // Percentage in Change
-        var high = stockValue.h; // High Price of the day
-        var low = stockValue.l; // Low Pric of the day
-        var open = stockValue.o; // Open price of the day
-        var previous = stockValue.pc; // Previous close price
+        // var Current = stockValue.c; // Current Price
+        // var change = stockValue.d; // Change 
+        // var percentage = stockValue.dp; // Percentage in Change
+        // var high = stockValue.h; // High Price of the day
+        // var low = stockValue.l; // Low Pric of the day
+        // var open = stockValue.o; // Open price of the day
+        // var previous = stockValue.pc; // Previous close price
 
-        console.log(Current)
-        console.log(change)
-        console.log(percentage)
-        console.log(high)
-        console.log(low)
-        console.log(open)
-        console.log(previous)
+        // console.log(Current)
+        // console.log(change)
+        // console.log(percentage)
+        // console.log(high)
+        // console.log(low)
+        // console.log(open)
+        // console.log(previous)
+
+ var cardCurrent = document.querySelector("#searchCurrentPrice")
+ var cardChange = document.querySelector("#searchChange")
+ var cardPerc = document.querySelector("#searchPercentage")
+
+ cardCurrent.textContent = stockValue.c;
+ cardChange.textContent = stockValue.d;
+ cardPerc.textContent = stockValue.dp;
+ 
       });
 }
 
@@ -417,6 +432,7 @@ submitButton.addEventListener("click", function () {
    stockPrice(stockUrl);
 });
 });
+
 
 
   // submitButton.addEventListener("click", function () {
