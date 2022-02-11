@@ -127,3 +127,6 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     date3.textContent = news.results[2].pubDate
   });
   })
+
+  // Please put this in as a null image placeholder. Thanks!
+  // https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg
