@@ -1,17 +1,20 @@
 <h1>-- Market Watch --</h1>  
 <br>
 <br>
-GitHub Repository Link: git@github.com:arjunkhakh/Market-Tracker.git
+GitHub Repository Link: https://github.com/arjunkhakh/Market-Tracker
 <br>
 <br>
 
-Online Application Deployment Link:: 
+Online Application Deployment Link:: https://arjunkhakh.github.io/Market-Tracker/
 <br>
 <br>
 
 <h2>Landing Page:</h2>
 <br>
-https://user-images.githubusercontent.com/95193763/153536630-a3a45b8a-c5b0-4a79-a578-147a7a4dc9c4.mov
+
+https://user-images.githubusercontent.com/95193763/153705431-17ebf599-2722-46ee-9ba2-ff8b85e2338f.mov
+
+
 
 <br>
 <br>
@@ -31,6 +34,11 @@ https://user-images.githubusercontent.com/95193763/153536642-7577bf1b-a0f6-402b-
 
 <br>
 <br>
+
+Description - For our project, we had made a Stock Market Tracker on US Companies. It shows the user a small profile of their ticker symbol and current price. There is also a news feed page which shows us popular business news but can be altered if you input the company you would like to read about.
+Motivation for development? - We decided we wanted to build something quite challenging for the project and building an application regarding the stock markets would be really fun and exciting to build.
+User story - As a Market Shareholder, I want to see a company's Current Price and Change Live every time the user refresh the page.
+
 <br>
 <br>
 <br>
