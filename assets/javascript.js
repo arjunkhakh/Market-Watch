@@ -1,50 +1,46 @@
+// Variables
 var inputBox = document.querySelector("#inputBox")
 var submitButton = document.querySelector("#submitBtn")
 
-var price1 = document.querySelector("#price1")
-var price2 = document.querySelector("#price2")
-var price3 = document.querySelector("#price3")
-var price4 = document.querySelector("#price4")
-var price5 = document.querySelector("#price5")
+var price1 = document.querySelector("#price1") // Apple
+var price2 = document.querySelector("#price2") // Alphabet/Google
+var price3 = document.querySelector("#price3") // Amazon
+var price4 = document.querySelector("#price4") // Tesla
+var price5 = document.querySelector("#price5") // Meta
+var price6 = document.querySelector("#price6") // Microsoft
+var price7 = document.querySelector("#price7") // Netflix
+var price8 = document.querySelector("#price8") // JP Morgan
+var price9 = document.querySelector("#price9") // Morgan Standley
+var price10 = document.querySelector("#price10") // Nike
+var price11 = document.querySelector("#price11") // Nvdia
+var price12 = document.querySelector("#price12") // Paypal
+var price13 = document.querySelector("#price13") // Pfzier
 
-var price6 = document.querySelector("#price6")
-var price7 = document.querySelector("#price7")
-var price8 = document.querySelector("#price8")
-var price9 = document.querySelector("#price9")
-var price10 = document.querySelector("#price10")
-var price11 = document.querySelector("#price11")
-var price12 = document.querySelector("#price12")
-var price13 = document.querySelector("#price13")
-
-var ticker1 = document.querySelector("#ticker1") 
-var ticker2 = document.querySelector("#ticker2") 
-var ticker3 = document.querySelector("#ticker3") 
-var ticker4 = document.querySelector("#ticker4") 
-var ticker5 = document.querySelector("#ticker5") 
-var ticker6 = document.querySelector("#ticker6") 
-var ticker7 = document.querySelector("#ticker7")  
-var ticker8 = document.querySelector("#ticker8") 
-var ticker9 = document.querySelector("#ticker9") 
-var ticker10 = document.querySelector("#ticker10") 
-var ticker11 = document.querySelector("#ticker11") 
-var ticker12 = document.querySelector("#ticker12")  
-var ticker13 = document.querySelector("#ticker13") 
+var ticker1 = document.querySelector("#ticker1") // Apple
+var ticker2 = document.querySelector("#ticker2") // Alphabet/Google
+var ticker3 = document.querySelector("#ticker3") // Amazon
+var ticker4 = document.querySelector("#ticker4") // Tesla
+var ticker5 = document.querySelector("#ticker5") // Meta
+var ticker6 = document.querySelector("#ticker6") // Microsoft
+var ticker7 = document.querySelector("#ticker7") // Netflix
+var ticker8 = document.querySelector("#ticker8") // JP Morgan
+var ticker9 = document.querySelector("#ticker9") // Morgan Standley
+var ticker10 = document.querySelector("#ticker10") // Nike
+var ticker11 = document.querySelector("#ticker11") // Nvdia
+var ticker12 = document.querySelector("#ticker12") // Paypal
+var ticker13 = document.querySelector("#ticker13") // Pfzier
 
 var cardContainer = document.querySelector("#userSearch")
 
+// A Function which calls the inputted company's profile and displays their name, ticker and logo
 function profileCall(url) {
   fetch(url)
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-        
 
-        var name = data.name;
-        var ticker = data.ticker;
-        var logo = data.logo;
-
-var cardName = document.querySelector("#searchName")
+  var cardName = document.querySelector("#searchName")
         var cardTicker = document.querySelector("#searchTicker")
         var cardLogo = document.querySelector("#searchLogo")
 
@@ -56,6 +52,8 @@ var cardName = document.querySelector("#searchName")
       });
 }
 
+// A Function which calls the inputted company's stock price and displays their current price, change in price and the percentage of the price change
+// It also features an if statement for the percentage and price change. Green for a positive change and red for a negative change.
 function stockPrice(url) {
   fetch(url)
       .then(function (response) {
@@ -86,9 +84,8 @@ function stockPrice(url) {
       });
 }
 
-function getLocalStorage(event) {
-  event.preventDefault();
-
+// A function which gets the input and puts it into local storage
+function getLocalStorage() {
   localStorage.setItem("inputBox", inputBox)
 }
 
@@ -395,20 +392,22 @@ function cardInfo13() {
   })
 }
 
-cardInfo1()
-cardInfo2()
-cardInfo3()
-cardInfo4()
-cardInfo5()
-cardInfo6()
-cardInfo7()
-cardInfo8()
-cardInfo9()
-cardInfo10()
-cardInfo11()
-cardInfo12()
-cardInfo13()
+cardInfo1() // Apple
+cardInfo2() // Alphabet/Google
+cardInfo3() // Amazon
+cardInfo4() // Tesla
+cardInfo5() // Meta
+cardInfo6() // Microsoft
+cardInfo7() // Netflix
+cardInfo8() // JP Morgan
+cardInfo9() // Morgan Standley
+cardInfo10() // Nike
+cardInfo11() // NVDIA
+cardInfo12() // Paypal
+cardInfo13() // Pzifer
 
+
+// A function which adds an event listener to the button when an input is been made. It will call two other functions which gets all the information for the cards.
 submitButton.addEventListener("click", function () {
   var input = inputBox.value;
 

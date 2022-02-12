@@ -1,29 +1,35 @@
+// Variables 
+
+//For each description in each box
 var desc1 = document.querySelector("#discription1")
 var desc2 = document.querySelector("#discription2")
 var desc3 = document.querySelector("#discription3")
 
+//For each title in each box
 var title1 = document.querySelector("#title1")
 var title2 = document.querySelector("#title2")
 var title3 = document.querySelector("#title3")
 
+//For each thumbnail in each box
 var thumbnail1 = document.querySelector("#thumbnail1")
 var thumbnail2 = document.querySelector("#thumbnail2")
 var thumbnail3 = document.querySelector("#thumbnail3")
 
-var sButton = document.querySelector("#searchBtn")
-var sInput = document.querySelector("#companyBox")
-
+//For each href in each box
 var url1 = document.querySelector("#link1")
 var url2 = document.querySelector("#link2")
 var url3 = document.querySelector("#link3")
 
+//For each date in each box
 var date1 = document.querySelector("#date1")
 var date2 = document.querySelector("#date2")
 var date3 = document.querySelector("#date3")
 
+// Button and Input Box
 var sButton = document.querySelector("#searchBtn")
 var sInput = document.querySelector("#companyBox")
 
+// Fetching the popular business news data on the landing page
 fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e503585594&country=us&category=business&language=en")
 .then(function (response) {
     return response.json();
@@ -47,16 +53,17 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     var img3 = news.results[2].image_url
     thumbnail3.setAttribute("src", img3)
 
+    // If Statement for if the API does not have an image for their story, it will display the placeholder image
     if (img1 === null) {
-      thumbnail1.setAttribute("src", "https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+      thumbnail1.setAttribute("src", "https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg")
     }
 
     if (img2 === null) {
-      thumbnail2.setAttribute("src", "https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+      thumbnail2.setAttribute("src", "https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg")
     }
 
     if (img3 === null) {
-      thumbnail3.setAttribute("src", "https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+      thumbnail3.setAttribute("src", "https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg")
     }
 
     var link1 = news.results[0].link
@@ -73,6 +80,7 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     date3.textContent = news.results[2].pubDate
   });
 
+  // When a user inputs a company and presses Search, it will replace all the text with the company news that was inputted.
   sButton.addEventListener("click", function () {
     var value = sInput.value  
 
@@ -99,16 +107,17 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     var img3 = news.results[2].image_url
     thumbnail3.setAttribute("src", img3)
 
+    // If Statement for if the API does not have an image for their story, it will display the placeholder image
     if (img1 === null) {
-      thumbnail1.setAttribute("src", "https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+      thumbnail1.setAttribute("src", "https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg")
     }
 
     if (img2 === null) {
-      thumbnail2.setAttribute("src", "https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+      thumbnail2.setAttribute("src", "https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg")
     }
 
     if (img3 === null) {
-      thumbnail3.setAttribute("src", "https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+      thumbnail3.setAttribute("src", "https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg")
     }
 
     var link1 = news.results[0].link
@@ -125,6 +134,3 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     date3.textContent = news.results[2].pubDate
   });
   })
-
-  // Please put this in as a null image placeholder. Thanks!
-  // https://images.moneycontrol.com/static-mcnews/2021/07/stocks_sensex_nifty_stockmarket1-1-770x433.jpg
