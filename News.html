@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/tablogo.png"/>
 </head>
 
-<body class="bg-gradient-to-r from-indigo-500 via-pink-400 to-indigo-500">
-    <nav class="p-5 bg-gradient-to-r from-indigo-500 via-pink-400 to-indigo-500 shadow md:flex md:items-center md:justify-between">
+<body class="bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500">
+    <nav class="p-5 bg-gradient-to-r from-orange-00 via-pink-400 to-indigo-500 shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center ">
           <span class="text-2xl font-[Poppins] cursor-pointer">
             <img class="h-10 inline h-20 px-6"
               src="./img/logoNoBGG.png">
           </span>
-<!-- News logo -->
-<div class="p-8">
-  <center><img class="h-10 inline h-20 " src="./img/newspng.png"></center>
-</div>
 
           <span class="text-3xl cursor-pointer mx-2 md:hidden block">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
@@ -30,17 +27,23 @@
     
         <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
           <li class="mx-4 my-6 md:my-0">
-            <a href="./index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+            <a href="./index.html" class="text-xl hover:text-orange-300 duration-500">Home</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="./News.html" class="text-xl hover:text-cyan-500 duration-500">News</a>
+            <a href="./News.html" class="text-xl hover:text-orange-300 duration-500">News</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="./aboutUs.html" class="text-xl hover:text-orange-400 duration-500">About Us</a>
           </li>
         </ul>
       </nav> 
 
-      
+<!-- News logo -->
+<div class="p-8">
+  <center><img class="h-10 inline h-20 " src="./img/newspng.png"></center>
+</div>
   
-
+    <!-- Start of news card -->
     <div class="flex justify-center">
         <div class="mb-3 xl:w-96">
             <div class="input-group relative flex flex-wrap items-stretch w-full mb-4">
@@ -106,7 +109,7 @@
                   <div class="flex items-center">
                     <div class="text-sm ml-2">
                       <p class="text-black leading-none text-blue-600">NEWS</p>
-                      <p id="date2" class="text-gray-700"></p>
+                      <p id="date2" class="text-gray-700">  </p>
                     </div>
                   </div>
                 <a id="link2" rel=" " href=""
@@ -140,7 +143,7 @@
                   <div class="flex items-center">
                     <div class="text-sm ml-2">
                       <p class="text-black leading-none text-blue-600">NEWS</p>
-                      <p id="date3" class="text-gray-700">February 6, 2022</p>
+                      <p id="date3" class="text-gray-700">  </p>
                     </div>
                   </div>
                 <a id="link3" rel=" " href=""
@@ -152,7 +155,82 @@
           </div>
         </div>
         
+        <div class="mx-auto px-4 py-4 max-w-xl my-auto overflow-hidden rounded-lg">
+          <div class="bg-gray-50 md:bg-white md:shadow-xl rounded-lg mb-6 ">
+              <div class="md:flex-shrink-0">
+                <!-- Artical Image -->
+                <img id="thumbnail4" src="https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="uploaded cover image"
+                  class="object-cover h-full w-full rounded-lg rounded-b-none">
+              </div>
+            
+            <div class="py-1">
+              <div class="p-4">
+                <!-- Title -->
+                <h2 id="title4" class="truncate font-bold mb-2 md:mt-4 text-2xl text-gray-800 tracking-normal">  </h2>
+                <!-- description -->
+                <p id="discription4" class="break-words text-sm text-gray-700 px-2 mr-1">---</p>
+                
+              </div>
+      
+              <div class="flex items-center justify-between p-2 md:p-4 md:mx-4">
+                  <div class="flex items-center">
+                    <div class="text-sm ml-2">
+                      <p class="text-black leading-none text-blue-600">NEWS</p>
+                      <p id="date4" class="text-gray-700">  </p>
+                    </div>
+                  </div>
+                <a id="link4" rel=" " href=""
+                  class="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-2">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        
-        
+        <div class="mx-auto px-4 py-4 max-w-xl my-auto overflow-hidden rounded-lg">
+          <div class="bg-gray-50 md:bg-white md:shadow-xl rounded-lg mb-6 ">
+              <div class="md:flex-shrink-0">
+                <!-- Artical Image -->
+                <img id="thumbnail5" src="https://static.toiimg.com/thumb/msid-89392914,width-1070,height-580,imgsize-104716,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="uploaded cover image"
+                  class="object-cover h-full w-full rounded-lg rounded-b-none">
+              </div>
+            
+            <div class="py-1">
+              <div class="p-4">
+                <!-- Title -->
+                <h2 id="title5" class="truncate font-bold mb-2 md:mt-4 text-2xl text-gray-800 tracking-normal">  </h2>
+                <!-- description -->
+                <p id="discription5" class="break-words text-sm text-gray-700 px-2 mr-1">---</p>
+                
+              </div>
+      
+              <div class="flex items-center justify-between p-2 md:p-4 md:mx-4">
+                  <div class="flex items-center">
+                    <div class="text-sm ml-2">
+                      <p class="text-black leading-none text-blue-600">NEWS</p>
+                      <p id="date5" class="text-gray-700">  </p>
+                    </div>
+                  </div>
+                <a id="link5" rel=" " href=""
+                  class="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-2">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</body>
+
 <script src="./assets/news.js"> </script>
+
+<!-- burger function HIDDEN -->
+<script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>
+
+</html>

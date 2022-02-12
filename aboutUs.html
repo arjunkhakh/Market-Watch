@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abour Us</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/tablogo.png"/>
+  
+</head>
+    <!-- NavBar -->
+    <body class="bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500">
+        <nav class="p-5 bg-gradient-to-r from-orange-400 via-pink-400 to-indigo-500 shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <img class="h-10 inline h-20 px-6"
+                  src="./img/logoNoBGG.png">
+              </span>
+        
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-transparent text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="./index.html" class="text-xl hover:text-orange-400 duration-500">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="./News.html" class="text-xl hover:text-orange-400 duration-500">News</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="./aboutUs.html" class="text-xl hover:text-orange-400 duration-500">About us</a>
+              </li>
+            </ul>
+          </nav> 
+          
+          <!-- About Us heading -->
+        <div class="p-8">
+        <center><img class="h-10 inline h-20 " src="./img/aboutUs.png"></center>
+        </div>
+
+        <div class=" box-border h-full w-22 p-4 mx-24 border-4 rounded-lg shadow-xl" >
+          
+          <!-- Text Box -->
+        <p class="text-5xl text-white text-center ">Who Are We?<p>
+        <P class="text-2xl text-white"> We are Arjun and Yutthana from AY and Co. </P>
+        <br>  
+        <P class="text-lg text-white"> 
+          AY and Co was founded on February 1st 2022, with the growth of young investor taking interest the stock market. We are a Web Development student building working together to build a functional stock market tracker using API, local storage, Tailwind CSS and JavaScript.  AY and Co believe building this current market tracker can be beneficial to beginner investor who are looking to dip their toe into this sector. 
+          Our main objective is to create an easy-to-use stock market price tracker with current breaking news to enable beginner trader to track of the current news and stock market price. Our market Place allow users to search for stocks of interest which reach beyond the popular companies section. 
+          Our news feed updates with the latest news published from multiple trusted news source.	
+          Our ambition is to continently enhance this page to be a reliable fiat on ramp to the stock market as well as crypto assets. - Technologies used; Visual Studio Code, Slack, Zoom, Finnhub API, News API and Api.Polygon.
+          <br>
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque temporibus exercitationem aut architecto quam quidem. Laboriosam vero perferendis a, provident doloribus nesciunt quasi, officia repellendus molestias exercitationem excepturi mollitia. Vitae, quo quaerat laborum molestiae quos voluptatem eveniet aspernatur ipsa rem dolor ducimus accusamus sapiente rerum maxime corrupti architecto at!
+          <br>
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam voluptatum sapiente, distinctio quae hic dolor voluptate ratione in fuga nemo alias animi aspernatur natus recusandae aliquid architecto voluptatibus, deleniti neque nam qui porro. Commodi eius ipsam nostrum illum rerum. Ratione quam similique ipsum dolorem, ipsam culpa assumenda accusantium provident vitae quasi. Architecto, excepturi maiores delectus debitis porro iure omnis soluta praesentium animi nostrum illo consectetur quaerat obcaecati! Totam, omnis enim optio velit incidunt distinctio fugiat assumenda nemo pariatur molestiae quisquam sit quasi porro facere unde! Pariatur ut voluptatem tempora rerum, adipisci reprehenderit nihil dolores ullam, laborum et ipsam in.
+        </P>  
+        </div>
+    </body>
+
+    <script>
+      function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      }
+    </script>
+
+</html>
