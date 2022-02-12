@@ -5,7 +5,7 @@ GitHub Repository Link: https://github.com/arjunkhakh/Market-Tracker
 <br>
 <br>
 
-Online Application Deployment Link:: https://arjunkhakh.github.io/Market-Tracker/
+Online Application Deployment Link:: https://arjunkhakh.github.io/Market-Watch/
 <br>
 <br>
 
