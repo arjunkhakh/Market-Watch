@@ -38,7 +38,7 @@ function profileCall(url) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
+        
 
         var name = data.name;
         var ticker = data.ticker;
@@ -62,23 +62,6 @@ function stockPrice(url) {
         return response.json();
       })
       .then(function (stockValue) {
-        console.log(stockValue);
-
-        // var Current = stockValue.c; // Current Price
-        // var change = stockValue.d; // Change 
-        // var percentage = stockValue.dp; // Percentage in Change
-        // var high = stockValue.h; // High Price of the day
-        // var low = stockValue.l; // Low Pric of the day
-        // var open = stockValue.o; // Open price of the day
-        // var previous = stockValue.pc; // Previous close price
-
-        // console.log(Current)
-        // console.log(change)
-        // console.log(percentage)
-        // console.log(high)
-        // console.log(low)
-        // console.log(open)
-        // console.log(previous)
 
  var cardCurrent = document.querySelector("#searchCurrentPrice")
  var cardChange = document.querySelector("#searchChange")
@@ -116,7 +99,7 @@ function cardInfo1() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker1.textContent = data.ticker;
   })
@@ -126,7 +109,7 @@ function cardInfo1() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price1.textContent = "$" + data.c;
   })
@@ -139,7 +122,7 @@ function cardInfo4() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker2.textContent = data.ticker;
   })
@@ -149,7 +132,7 @@ function cardInfo4() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price2.textContent = "$" + data.c;
   })
@@ -162,7 +145,7 @@ function cardInfo3() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker3.textContent = data.ticker;
   })
@@ -172,7 +155,7 @@ function cardInfo3() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price3.textContent = "$" + data.c;
   })
@@ -185,7 +168,7 @@ function cardInfo2() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker4.textContent = data.ticker;
   })
@@ -195,7 +178,7 @@ function cardInfo2() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price4.textContent = "$" + data.c;
   })
@@ -209,7 +192,7 @@ function cardInfo5() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker5.textContent = data.ticker;
   })
@@ -219,7 +202,7 @@ function cardInfo5() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price5.textContent = "$" + data.c;
   })
@@ -232,7 +215,7 @@ function cardInfo6() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker6.textContent = data.ticker;
   })
@@ -242,7 +225,7 @@ function cardInfo6() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price6.textContent = "$" + data.c;
   })
@@ -255,7 +238,7 @@ function cardInfo7() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker7.textContent = data.ticker;
   })
@@ -265,7 +248,7 @@ function cardInfo7() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price7.textContent = "$" + data.c;
   })
@@ -278,7 +261,7 @@ function cardInfo8() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker8.textContent = data.ticker;
   })
@@ -288,7 +271,7 @@ function cardInfo8() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price8.textContent = "$" + data.c;
   })
@@ -301,7 +284,7 @@ function cardInfo9() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker9.textContent = data.ticker;
   })
@@ -311,7 +294,7 @@ function cardInfo9() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price9.textContent = "$" + data.c;
   })
@@ -324,7 +307,7 @@ function cardInfo10() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker10.textContent = data.ticker;
   })
@@ -334,7 +317,7 @@ function cardInfo10() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price10.textContent = "$" + data.c;
   })
@@ -347,7 +330,7 @@ function cardInfo11() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker11.textContent = data.ticker;
   })
@@ -358,7 +341,7 @@ function cardInfo11() {
   })
   .then(function (data) {
 
-    console.log(data);
+    
 
     price11.textContent = "$" + data.c;
   })
@@ -372,7 +355,7 @@ function cardInfo12() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker12.textContent = data.ticker;
   })
@@ -382,7 +365,7 @@ function cardInfo12() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price12.textContent = "$" + data.c;
   })
@@ -396,7 +379,7 @@ function cardInfo13() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     ticker13.textContent = data.ticker;
   })
@@ -406,7 +389,7 @@ function cardInfo13() {
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    
 
     price13.textContent = "$" + data.c;
   })
@@ -435,7 +418,6 @@ submitButton.addEventListener("click", function () {
 })
 .then(function (input) {
   var symbol = input.results[0].ticker
-  console.log(input.results[0].ticker);
   
   var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopu2ad3i9jn7riiig")
 
@@ -448,95 +430,3 @@ submitButton.addEventListener("click", function () {
   cardContainer.setAttribute("style", "display:block;")
 });
 });
-
-
-
-  // submitButton.addEventListener("click", function () {
-  //   var input = inputBox.value;
-
-  //   fetch(("https://eodhistoricaldata.com/api/search/" + input + "?api_token=61fc0e9d63bc94.19357754&limit=1")) 
-  // .then(function (response) {
-  //   return response.json();
-  // })
-  // .then(function (data) {
-  //   var symbol = data[0].Code;
-  //   console.log(data[0].Code);
-  //   var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60")
-
-  //   profileCall(profileUrl); 
-
-  //   var stockUrl = ("https://finnhub.io/api/v1/quote?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60");
-
-  //   stockPrice(stockUrl);
-  // })
-
-  // });
-
-  // TO DO 
-
-  // ADD STOCK CANDLE WIDGET CHART https://finnhub.io/docs/api/stock-candles
-
-  // Popular Companies Card: Apple (1), Tesla (2), Amazon (3), Google (4), Netflix(5)
-
-
-
-// COMMENTS BELOW FOR REFERNCE
-
-// var url = "https://finnhub.io/api/v1/search?q=US0378331005&token=c7sopmqad3i9jn7rii60";
-
-// var url2 = "https://finnhub.io/api/v1/stock/symbol?exchange=US&token=c7sopmqad3i9jn7rii60"
-
-// var url3 = "https://finnhub.io/api/v1/company-news?symbol=AAPL&from=2021-09-01&to=2021-09-09&token=c7sopmqad3i9jn7rii60"
-
-// // https://finnhub.io/api/v1/search?q=US0378331005&token=c7sopmqad3i9jn7rii60
-
-// var url5 = "https://eodhistoricaldata.com/api/search/Apple%20Inc?api_token=61fc0e9d63bc94.19357754&limit=1"
-
-  // fetch(url5) 
-// .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     var symbol = data[0].Code;
-//     console.log(data[0].Code);
-//     var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopmqad3i9jn7rii60")
-
-//     profileCall(profileUrl); 
-//   })
-
-// function profileCall(url) {
-//   fetch(url)
-//       .then(function (response) {
-//         return response.json();
-//       })
-//       .then(function (data) {
-//         console.log(data);
-//       });
-// }
-
-//   fetch(url2) 
-// .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log(data);   
-//   })
-
-//   fetch(url3) 
-//   .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);   
-//     })
-
-    // Company Name, Logo, Company Symbol, Stock Market Price and Increase/Decrease in Stock Market Value in Percentage.
-
-    // Get the American ISIN which gives us the company symbol which we can access the profile
- 
-  // TO DO 
-
-  // ADD STOCK CANDLE WIDGET CHART https://finnhub.io/docs/api/stock-candles
-
-  // Popular Companies Card: Apple (1), Tesla (2), Amazon (3), Google (4), Netflix(5)
-

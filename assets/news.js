@@ -29,7 +29,6 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     return response.json();
   })
   .then(function (news) {
-    console.log(news);
 
     title1.textContent = news.results[0].title
     title2.textContent = news.results[1].title
@@ -82,7 +81,6 @@ fetch("https://newsdata.io/api/1/news?apikey=pub_4321bed719384d54f676f9caf3e5035
     return response.json();
   })
   .then(function (news) {
-    console.log(news);
 
     title1.textContent = news.results[0].title
     title2.textContent = news.results[1].title
