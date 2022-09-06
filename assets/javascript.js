@@ -428,6 +428,7 @@ submitButton.addEventListener("click", function () {
    
    cardContainer.setAttribute("style", "display:block;")
 
+   // If No Recognised Company Is Entered
   var noCompanyText = document.querySelector('#noCompany')
   if (symbol == null) {
     noCompanyText.setAttribute("style", "display:block;")
