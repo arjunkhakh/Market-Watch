@@ -4,4 +4,6 @@
 
 #noCompany {
     display: none;
+    font-size: small;
+    color: white;
 }
