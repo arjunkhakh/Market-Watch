@@ -416,7 +416,7 @@ submitButton.addEventListener("click", function () {
   return response.json();
 })
 .then(function (input) {
-  var symbol = input.results[0].ticker
+  var symbol = input.results[0]?.ticker
   
   var profileUrl = ("https://finnhub.io/api/v1/stock/profile2?symbol=" + symbol + "&token=c7sopu2ad3i9jn7riiig")
 
@@ -425,7 +425,15 @@ submitButton.addEventListener("click", function () {
    var stockUrl = ("https://finnhub.io/api/v1/quote?symbol=" + symbol + "&token=c7sopu2ad3i9jn7riiig");
 
    stockPrice(stockUrl);
+   
+   cardContainer.setAttribute("style", "display:block;")
 
-  cardContainer.setAttribute("style", "display:block;")
+  var noCompanyText = document.querySelector('#noCompany')
+  if (symbol == null) {
+    noCompanyText.setAttribute("style", "display:block;")
+  } else {
+    noCompanyText.setAttribute("style", "display:none;")
+    cardContainer.setAttribute("style", "display:block;")
+  }
 });
 });
